@@ -38,6 +38,13 @@ The `Frontiers-Vancouver.cls` appears to support support several other options
 including `draft`, `final`, `a4paper` etc. but they have not been tested so 
 use at your own risk.
 
+A `runningauthor:` *must* be specified or the LaTex file will fail to
+build. This is the first author that is but at the head of each page
+with et al.
+
+`runningtitle:` likewise gives the header for the title on the right
+of each page. This is not required.
+
 In order for the author affiliations to be properly formatted, each affiliation
 must use a number `1`, `2`, etc. as the id field.
 
