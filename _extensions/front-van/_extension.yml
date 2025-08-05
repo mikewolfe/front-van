@@ -1,0 +1,29 @@
+title: Front-van
+author: Mike Wolfe
+version: 1.0.0
+quarto-required: ">=1.7.0"
+contributes:
+  formats:
+    common:
+    pdf:
+      toc: false
+      number-sections: true
+      cite-method: natbib
+      biblio-style: Frontiers-Vancouver 
+      pdf-engine: pdflatex
+      format-resources:
+        - FrontiersinVancouver.cls
+        - Frontiers-Vancouver.bst
+        - logo1.eps
+      template-partials:
+        - "partials/doc-class.tex"
+        - "partials/_affiliation.tex"
+        - "partials/title.tex"
+        - "partials/before-body.tex"
+        - "partials/fonts.tex"
+    html:
+      csl: "frontiers-in-physics.csl"
+    docx:
+      csl: "frontiers-in-physics.csl"
+      reference-doc: "Frontiers_Template.docx"
+

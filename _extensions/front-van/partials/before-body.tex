@@ -1,0 +1,28 @@
+\onecolumn
+\firstpage{1}
+
+$if(title)$
+\title[$if(runningtitle)$$runningtitle$$endif$]{$title$}
+$endif$
+
+\author[\firstAuthorLast ]{\Authors}
+\address{}
+\correspondance{}
+
+\extraAuth{}
+
+$if(title)$
+\maketitle
+$endif$
+
+$if(abstract)$
+\begin{abstract}
+\section{}
+$abstract$
+$if(keywords)$
+\tiny
+\keyFont{\section{Keywords:}$for(keywords)$$keywords$$sep$, $endfor$}
+$endif$
+\end{abstract}
+$endif$
+

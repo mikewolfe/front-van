@@ -1,0 +1,18 @@
+\usepackage{url,hyperref,lineno,microtype,subcaption}
+\usepackage[onehalfspacing]{setspace}
+
+\linenumbers
+
+\def\keyFont{\fontsize{8}{11}\helveticabold }
+$if(runningauthor)$
+\def\firstAuthorLast{$runningauthor$ {et~al.}}
+$endif$
+\def\Authors{$for(by-author)$$by-author.name.literal$\textsuperscript{$if(by-author.affiliations)$$for(by-author.affiliations)$$it.id$$sep$,$endfor$$endif$$if(by-author.attributes.corresponding)$,*$endif$}$sep$, $endfor$}
+\def\Address{$for(by-affiliation)$ \textsuperscript{$it.id$}$_affiliation.tex()$$sep$\\ $endfor$}
+
+$for(by-author)$
+$if(by-author.attributes.corresponding)$
+\def\corrAuthor{$by-author.name.literal$}
+\def\corrEmail{$by-author.email$}
+$endif$
+$endfor$
