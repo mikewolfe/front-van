@@ -39,7 +39,7 @@ including `draft`, `final`, `a4paper` etc. but they have not been tested so
 use at your own risk.
 
 A `runningauthor:` *must* be specified or the LaTex file will fail to
-build. This is the first author that is but at the head of each page
+build. This is the first author that is put at the head of each page
 with et al.
 
 `runningtitle:` likewise gives the header for the title on the right
@@ -78,4 +78,8 @@ This modifies the Frontiers in Template LaTeX and Word templates, available at
 This template was created following the excellent guide by Christopher Kenny:
 
 T. Kenny, Christopher. 2023. “Creating Quarto Journal Article Templates.” July 1, 2023. 
-https://christopherkenny/posts/2023-07-01-creating-quarto-journal-articles.
+<https://christophertkenny.com/posts/2023-07-01-creating-quarto-journal-articles>.
+
+The `wordcount.lua` function for getting wordcount tables while
+rendering was adapted from
+<https://github.com/CoryMcCartan/cmc-article/blob/main/_extensions/cmc-article/wordcount.lua>.

@@ -189,7 +189,7 @@ Many Frontiers journals use the numbered referencing system, to find the style a
 :::
 
 
-# Figure captions {.unnumbered}
+# Figure captions {.unnumbered .appendix}
 
 Please be aware that for original research articles we only permit a combined
 number of 15 figures and tables, one figure with multiple subfigures will count
@@ -221,6 +221,6 @@ references.
 
 If you don't add the figures in the LaTeX files, please upload them when
 submitting the article. Frontiers will add the figures at the end of the
-provisional pdf automatically The use of LaTeX coding to draw
+provisional pdf automatically. The use of LaTeX coding to draw
 Diagrams/Figures/Structures should be avoided. They should be external callouts
 including graphics.
